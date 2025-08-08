@@ -30,7 +30,7 @@ Now you can pretend to know what your house plant is feeling with our website 'c
 For Software:
 - JavaScript,HTML ,CSS
 - React,Vite
-- Figma
+- Figma,Chat GPT
 
 
 
@@ -39,49 +39,64 @@ For Software:
 For Software:
 
 # Screenshots 
-![Screenshot1]
-Add caption explaining what this shows
+![Screenshot1]https://github.com/AleenCyriac/useless-project/blob/main/Screenshot%202025-08-09%20012642.png
 
-![Screenshot2](Add screenshot 2 here with proper name)
-Add caption explaining what this shows
+
+![Screenshot2]https://github.com/AleenCyriac/useless-project/blob/main/Screenshot%202025-08-09%20012816.png
+
 
 
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-Add caption explaining your workflow
+        ┌────────────────────┐
+        │   App Loads        │
+        │ (useEffect runs)   │
+        └────────┬───────────┘
+                 │
+                 ▼
+       ┌──────────────────────┐
+       │ Random Mood is set   │
+       │ Random Response set  │
+       └────────┬─────────────┘
+                │
+                ▼
+      ┌──────────────────────────┐
+      │ UI: Mood & Response Show │
+      │ UI: Buttons Render       │
+      └────────┬────────────────┘
+               │
+       ┌───────┼────────────────────┬────────────────────────────────────────────────┐
+       ▼       ▼                    ▼                                                ▼
+  [Check]   [Water]             [Ignore]                                     Other Actions
+   Mood      Plant                │                                          (Wink, Pot, etc.)
+     │         │                 ┌┴┐                                               │
+     │         │        ┌──────►│Mood: bored/sad/angry/etc.                       │
+     │         ▼        │       └─────────────────────┐                           ▼
+     │    If sad → calm │                              ▼             ┌────────────────────────────┐
+     │    If calm → happy◄───── mood transitions logic └────────────►│ Mood set & Response shown │
+     │                                                  ▲            └────────────────────────────┘
+     └────────────── mood unchanged unless thirsty      │
+                         ▼                              │
+                ┌─────────────────────────┐             │
+                │ maybeMakeThirsty() hook │◄────────────┘
+                │ 15% chance to change    │
+                │ mood → thirsty          │
+                └─────────────────────────┘
 
-For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-Add caption explaining connections
 
-![Schematic](Add your schematic diagram here)
-Add caption explaining the schematic
-
-# Build Photos
-![Components](Add photo of your components here)
-List out all components shown
-
-![Build](Add photos of build process here)
-Explain the build steps
-
-![Final](Add photo of final product here)
-Explain the final build
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-Explain what the video demonstrates
+https://github.com/AleenCyriac/useless-project/blob/main/Screen%20Recording%202025-08-09%20013428.mp4
+video demonstrates the working of the website.
 
-# Additional Demos
-[Add any extra demo materials/links]
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Aleen Rose]: [Coder,Git Hub Handler,Prompter]
+- [Name 2]: [Page design,Photo Editing,Plant Desigh,]
+
 
 ---
 Made with ❤ at TinkerHub Useless Projects 
