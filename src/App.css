@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Quicksand&family=Playfair+Display&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #fdf6e3, #f8e4b2);
+  color: #3e2f1c;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px; 
+  padding: 50px 30px; 
+}
+
+.center {
+  font-size: 3.5rem;
+  font-family: 'Cinzel Decorative', cursive;
+  color: #3c4d2a;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.plant-card {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.column-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.plant-info h2 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  font-family: 'Playfair Display', serif;
+  color: #5a3b1d;
+  margin-bottom: 10px;
+}
+
+.response {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 1.8rem; /* was 1.2rem */
+  color: #3a2c1a;
+}
+
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+button {
+  background: linear-gradient(to bottom right, #745c1b, #c5a249);
+  color: #fff9e6;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 6px 12px rgba(50, 40, 20, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(50, 40, 20, 0.6);
+  background: linear-gradient(to bottom right, #886c24, #e3c25e);
+}
+
+.plant-image {
+  width: 250px;
+  height: auto;
+  margin-top:30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(80, 60, 40, 0.3);
+}
+
+@media (max-width: 768px) {
+  .plant-image {
+    width: 200px;
+  }
+}
+
